@@ -5,7 +5,7 @@ require 'pry'
 ## 
 class Artist
   include Paramable::InstanceMethods
-  include Findable::InstanceMethods
+  extend Findable::ClassMethods
   include Memorable::InstanceMethods
   extend Memorable::ClassMethods
   @@all = []
