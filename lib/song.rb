@@ -9,12 +9,13 @@ class Song
   include Memorable::InstanceMethods
   extend Memorable::ClassMethods
   
-  
   attr_accessor :name, :artist 
   
-  @@songs = []
-  def initialize
-    @@songs << self
+  @@all = []
+  
+  
+  def self.all
+    @@all
   end
 
 end
